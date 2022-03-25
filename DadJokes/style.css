@@ -1,0 +1,48 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: steelblue;
+  padding: 5%;
+}
+
+.container{
+  width: 100%;
+ padding: 50px 20px;
+ background-color: rgb(255, 255, 255);
+ border-radius: 10px;
+ text-align: center;
+ box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.342);
+}
+
+.container h3{
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.joke{
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 50px auto;
+}
+
+.btn{
+  border: none;
+  border-radius: 5px;
+  padding: 15px 10px;
+  background-color: steelblue;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+  transform: scale(1);
+}
+
+.btn:focus{
+  transform: scale(.98);
+}
