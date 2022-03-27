@@ -1,0 +1,96 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #eafbff;
+    height: 100vh;
+    background-image: linear-gradient( to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100% );
+}
+
+.active{
+    position: relative;
+    background-color:white ;
+    width: 400px;
+    color: black;
+    transition: width .5s ease;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li{
+
+    margin: 18px;
+    color: black;
+
+    transition: all 0.3s linear;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    border: none;
+    background: transparent;
+}
+
+.line{
+    position: relative;
+    width: 20px;
+    height: 2px; 
+    background-color: steelblue;
+
+}
+
+.line1{
+    position: absolute;
+    transition: transform 1s linear;
+    transform: rotate(-45deg);
+}
+.line2{
+    transform: rotate(45deg);
+    transition: transform 1s linear;
+}
+
+.active.not{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.329);
+
+}
+
+.active.not li{
+ transform: rotate(460deg);
+ opacity: 0;
+}
+
+.active.not .icon{
+    left: 38%;
+
+}
+
+.active.not .line1{
+    transform: rotate(-360deg) translateY(5.5px);
+    
+}
+
+.active.not .line2{
+    transform: rotate(360deg) translateY(-5.5px);
+}
+
+
+
+
